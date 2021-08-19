@@ -1,9 +1,9 @@
 {
-    "name": "TabOut",
-    "displayName": "TabOut",
+    "name": "TabBack",
+    "displayName": "TabBack",
     "description": "Tab out of quotes, brackets, etc",
-    "version": "0.2.0",
-    "publisher": "albert",
+    "version": "0.0.1",
+    "publisher": "alenros",
     "engines": {
         "vscode": "^1.0.0"
     },
@@ -47,6 +47,11 @@
                 "command": "tabout",
                 "key": "tab",
                 "mac": "tab",
+                "when": "editorTextFocus && !suggestWidgetVisible && !inSnippetMode && !editorHasMultipleSelections"
+            },
+            {
+                "command": "tabback",
+                "key": "shift+tab",
                 "when": "editorTextFocus && !suggestWidgetVisible && !inSnippetMode && !editorHasMultipleSelections"
             }
         ]
